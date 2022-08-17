@@ -1,0 +1,41 @@
+
+<div style="margin: 1em;">
+    <h1>Hello, Welcome to {{ title }}</h1>
+  
+    <p>Instert your mark here</p>
+  
+    <input [(ngModel)]="myScore" />
+  
+  
+    <div *ngIf="viewScore">
+  
+      <p>Your score is {{ myScore }}</p>
+      <div *ngIf="myScore >= 80; else fail">
+        <p>You pass the test!</p>
+      </div>
+    
+      <ng-template #fail>
+        <p>You fail the test!</p>
+      </ng-template>
+    </div>
+  
+    <ul>
+      <li *ngFor="let car of cars">{{ car }}</li>
+    </ul>
+    
+  
+    <div>
+      <button (click)="checkScore()">Check Score</button>
+    </div>
+  
+  
+    <!-- <div *ngIf="myScore >= 80 && myScore < 90">
+      <p>Your grade is B</p>
+    </div>
+  
+    <div *ngIf="myScore < 80">
+      <p>Your grade is C</p>
+    </div> -->
+  
+  
+  </div>
