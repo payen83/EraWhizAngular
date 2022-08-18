@@ -4,6 +4,9 @@
         {{ student.name }}
     </li>
 </ul> -->
+<button mat-raised-button routerLink="form-view">Form</button>
+<button mat-raised-button routerLink="table-view">Table</button>
+<router-outlet></router-outlet>
 <div style="margin: 1em;">
     <form [formGroup]="myForm" (ngSubmit)="submitForm()">
         <div>

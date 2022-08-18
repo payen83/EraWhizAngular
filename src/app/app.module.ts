@@ -15,6 +15,8 @@ import { MatInputModule } from '@angular/material/input';
 import { ConvertPipe } from './pipes/convert.pipe';
 import { MatSelectModule } from '@angular/material/select';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { FormViewComponent } from './pages/form/form-view/form-view.component';
+import { TableViewComponent } from './pages/form/table-view/table-view.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ProfileComponent } from './pages/profile/profile.component';
     HomeComponent,
     FormComponent,
     ConvertPipe,
-    ProfileComponent
+    ProfileComponent,
+    FormViewComponent,
+    TableViewComponent
   ],
   imports: [
     MatInputModule,
